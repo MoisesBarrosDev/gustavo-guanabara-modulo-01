@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos</title>
+</head>
+
+<body>
+  <h1>Inserindo vídeos hospedados localmente</h1>
+  <p>Este vídeo está hospedado no meu propio servidor.</p>
+  <!-- toda vez que for implementar, seja vídeo ou foto, tem que colocar todos os vídeos, porque nem sempre o navegador do cliente vai funcionar -->
+  <!-- esse tipo de hospedagem local gasta muito dinheiro do cliente -->
+  <video width="560" poster="favicon/favicon.ico" controls loop>
+    <source src="medias/meuvideo.mp4" type="video/mp4">
+    <source src="medias/meuvideo.m4v" type="video/m4v">
+    <source src="medias/meuvideo.webm" type="video/webm">
+    <source src="medias/meuvideo.ogv" type="video/ogg">
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+  </video>
+  <!-- Agora é uma forma de gastar nada do dinheiro do seu clliente  abaixo;-->
+  <!-- dica caso queira um vídeo seu sem gastar o dinheiro do seu cliente , crie um canal do youtube e jogue o vídeo lá, assim o cliente vai pegar os dados do youtube -->
+  <!-- Caso o cliente queira um vídeo com mais qualidade recomendo pagar um plano do vímeo -->
+  <!-- cuidado com os direitos autorais -->
+  <h1>Inserindo vídeos do YouTube</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/QXXpJHR4m8w?si=EZV3gH3Ub42OJTAo"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon/test.ico" type="image/x-icon">
+  <style>
+    mark {
+      color: cornflowerblue;
+      background-color: red;
+    }
+
+    .bg-color {
+      background-color: aqua;
+    }
+  </style>
+  <title>Formatação de Textos</title>
+
+</head>
+
+<body>
+  <h1>Princípas Formatações</h1>
+  <h2>Negrito / Destaque</h2>
+  <!--negrito não semantico-->
+  <p>Nessa frase temos um <b>termo em negrito</b> usando a tag B</p>
+  <!-- Negrito semantico -->
+  <p>Nesta frase, tenho um <strong>Termo em Destaque</strong> Usando a tag STRONG (SEMANTICO) </p>
+
+  <h2>Itálico / Enfâse</h2>
+  <!-- não semantico -->
+  <p>Nesta Frase, temos um <i>termo Itálico</i> usando a tag(Não Semântica).</p>
+  <!-- Jeito Semantico -->
+  <p>Nesta Frase,temos um termo <em>em ênfase</em> usando a tag EM</p>
+  <h2>Texto Marcado</h2>
+  <p>Podemos criar Também um <mark>Texto marcado</mark> usando a tag MARK.</p>
+  <!-- o certo é não mudar o estilo no html e sim na css -->
+  <p>esse é outro jeito de <mark style="background-color: black">marcação de textos</mark> </p>
+  <!--  esse tambem não é o jeito certo de fazer, PRA MUDAR A COR SOMENTE NA CSS, estou apenas listando kduas formas erradas de fazer -->
+  <h2>Texto Grande e Pequeno</h2>
+  <p>Estamos criando um <big>texto grande</big>, e um <small>texto pequeno</small>neste paragrafo</p>
+  <!-- tag big já está fora do ar, e em breve a tag small ficará -->
+  <h2>Texto deletado</h2>
+  <p>podemos marcar um <del>texto como excluido</del>,para indicar que ele deve ser lido, mas não considerado.</p>
+  <h2>Texto inserido</h2>
+  <p>Podemos marcar um <ins>texto como inserido</ins>,para dar uma êfase e indicar que ele foi adicionado depois.</p>
+  <p>Existe tambem o <u>subliando</u> com a tag U (não semantico)</p>
+  <h2>Texto sobrescrito</h2>
+  <p>para inserir coisas do tipo x<sup>20</sup>+3</p>
+  <h2>Texto subscrito</h2>
+  <p>para inserir coisas do tipo H<sub>2</sub>O</p>
+  <mark class="bg-color">test</mark>
+</body>
+
+</html>

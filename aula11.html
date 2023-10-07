@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagens dinâmicas</title>
+</head>
+
+<body>
+  <h1>Imagem dinâmica</h1>
+  <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+    navegador. </p>
+
+  <picture>
+    <!-- a tag  <source media="(max-width:1000px)" srcset="test./foto-m.png" type="image/png"> sgnifica caso o navegador estiver com menos de 1000px ele vai carregar uma imagem melhor-->
+    <!-- quanto menor a imagem fica acima de outro source -->
+    <!-- a ordem abaixo dos source,imagens grandes primeiro,imagem medias em segundo, imagem pequena em ultimo -->
+    <!-- veja quando abrir essa pagina diminuindo e almentando oque acontece -->
+    <source media="(max-width:750px)" srcset="test./foto-p.png" type="image/png">
+    <source media="(max-width:1050px)" srcset="test./foto-m.png" type="image/png">
+    <img src="test./foto-g.png" alt="Imagem flexível">
+  </picture>
+
+  <h1>Reproduzindo audios </h1>
+  <p>vamos aprender a reproduzir audios em HTML5</p>
+  <!-- no caso para colocar esse audio em um site oficial não pode,pois tem o direito autoral -->
+  <!-- tipos de formatos de musica; MP3,NAV,OGG -->
+  <!-- existem 2 maneiras.-->
+
+  <audio src="music./Justin_Bieber_-_Love_Me_(Jesusful.com).mp3" controls autoplay></audio>
+  <!-- existe essa outa maneira;   <audio preload="metadata" autoplay controls loop>
+    <source src="music./One-Time---Justin-Bieber(PagalWorld).mp3" type="music./mp3"> -->
+  <!-- use isso quando o navegador não for compativel, se liga abaixo; -->
+  <p>infelizmente seu navegador não consegue reproduzir esse audio. <a href="">clique aqui para baixar, o arquivo
+      mp3</a></p>
+  <!-- é só um exemplo acima -->
+  
+
+  </audio>
+</body>
+
+</html>
